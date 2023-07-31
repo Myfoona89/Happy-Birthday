@@ -1,0 +1,75 @@
+html, body, ul, li{
+    margin: 0;
+    padding: 0;
+    123
+}
+body{
+    background: url("../img/back1.jpg");
+    background-size: 100%;
+}   
+.gallery{
+    width: 860px;
+    margin: 40px auto 0px;
+    text-align: center;
+}
+button {
+    background-color: rgba(117, 190, 218, 0.5);
+    border-color: white;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 10;
+    position: absolute;
+    widows: 80px;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+}
+
+.stop {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.start {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.gallery .photos{
+    position: relative;
+    height: 510px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery .photos img{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s;
+    height: 100%;
+ object-fit: cover;
+
+}
+
+.showed{
+    opacity: 1 !important;
+    z-index: 11;
+}
+
+p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  text-shadow:
+    0 0 tomato,
+    0 0 yellowgreen,
+    0 0 skyblue;
+  color: transparent;
+ 
+}
+
