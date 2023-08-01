@@ -17,10 +17,6 @@ window.onload = function () {
   		stop.classList.remove('showed');
   		start.classList.add('showed');
 	})
-	
-	// start.addEventListener('click', function() {
-		
-	// });
 
 	function current(){
 		this.images[this.i].classList.remove('showed');
@@ -49,18 +45,4 @@ window.onload = function () {
 		};
 	};
 
-
 };
-	// this.prev = function () {
-	// 	this.images[i].classList.remove('showed');
-	// 	i--;
-
-	// 	if (i < 0) {
-	// 		i = this.images.length - 1;
-	// 	}
-
-	// 	this.images[i].classList.add('showed'); 
-	// };
-
-		
-
