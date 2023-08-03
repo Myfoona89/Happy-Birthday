@@ -9,7 +9,7 @@ window.onload = function () {
   		slider.run(2000);
   		start.classList.remove('showed');
   		stop.classList.add('showed');
-	})
+	});
 
 	stop.addEventListener('click', () => {
   		document.querySelector('audio').pause();
