@@ -16,9 +16,13 @@ window.onload = function () {
   		slider.stop();
   		stop.classList.remove('showed');
   		start.classList.add('showed');
-	})
+	});
 
 	function current(){
+		this.images[this.i].animate([
+			{transform: 'translateX(0) scale(1)'},
+			{transform: 'translateX(100%) scale(0.8)'}
+		], {duration: 1000});
 		this.images[this.i].classList.remove('showed');
 		this.i++;
 
@@ -27,8 +31,8 @@ window.onload = function () {
 		};
 
 		this.images[this.i].classList.add('showed'); 
-		
-	}
+		}
+
 
 	function Slider(images) {
 		this.images = images;
@@ -42,6 +46,7 @@ window.onload = function () {
 
 		this.stop = function(time){
 			clearInterval(this.interval);
+
 		};
 	};
 
